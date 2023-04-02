@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.66rem;
+    background-color:#ebe1d4;
+    color: maroon;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+nav ul{
+    background-color: maroon;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+header{
+    height: 90vh;
+}
+
+header img{
+    width: 100%;
+    height: 100%
+}
+
+
+p{
+    font-size: 2rem;
+}
+
+section button{
+    border: 0;
+    background-color: maroon;
+    color: #ebe1d4;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.background-display{
+    position: relative; 
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.background-display::before {    
+    content: "";
+    background-image: url('./images/fooddish.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+
+.background-display .background-content{
+    position: relative;
+  color: #fff;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.background-content #logo{
+    width: 15rem;
+}
+
+.background-content p{
+    font-size: 2rem;
+}
+
+.menu-section .menu-section-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+ .menu-section-food img{
+    height: 20rem;
+    width: 100%;
+ }
+
+
+ .about-web{
+    padding: 0 5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+ }
+
+ .about-web > *{
+    width: 50%;
+}
+
+.about-web .round-meal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+}
+
+.about-web .round-meal img{
+    height: 25rem;
+    width: 100%;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.about-web .about-web-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.about-web-content button{
+    width: fit-content;
+}
+
+.about-offer{
+    background-color: maroon;
+    color: #ebe1d4;
+    padding: 2rem 5rem;
+}
+
+.about-offer button{
+    background-color: #ebe1d4;
+    color: maroon;
+}
+
+
+.offer-section{
+    padding: 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.input-div{
+    margin-top: 2rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input-div input{
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.input-div input::placeholder{
+    font-size: 1.5rem;
+}
+
+.input-div button{
+    margin-left: -3rem;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    flex-wrap: wrap;
+}
+
+footer > *{
+    width: 44%;
+}
+
+footer > .left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.left-footer i{
+    background-color: red;
+    font-size: 2rem;
+}
+
+.right-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.right-footer > div h2{
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    footer{
+        gap: 5rem
+    }
+
+    footer > *{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        gap: 2rem;
+        padding: .5rem;
+    }
+
+    nav header{
+        height: 60vh;
+    }
+
+    .about-web{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-web > *{
+        width: 100%;
+    }
+
+    .about-web .about-web-content{
+        align-items: center;
+    }
+
+    .about-web .round-meal img{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    nav ul li{
+        font-size: 1.2rem;
+    }
+    nav ul{
+        gap: 1rem;
+        padding: .5rem;
+    }
+
+     p{
+        font-size: 1.5rem;
+    }
+    section button{
+        padding: .8rem 1.6rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    footer{
+        padding: 2rem
+    }
+    .background-content #logo{
+        width: 10rem;
+    }
+}
